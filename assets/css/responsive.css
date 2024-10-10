@@ -1,0 +1,268 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Table & Mobile */
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background-color: #fff;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        z-index: 1;
+    }
+
+    .menu-dramer__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-dramer__top svg {
+        width: 24px;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        list-style: none;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #4f6361;
+        padding: 14px 0;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero .infor {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .clients .images {
+        gap: 24px 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .guides-item {
+        flex: 1;
+        padding: 0;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block, .stats .infor {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 80px;
+        order: 2;
+    }
+
+    .stats .infor {
+        order: 1;
+        padding: 0;
+    }
+
+    .stats .infor .sub-title {
+        width: 70%;
+    }
+
+    .stats .infor .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty {
+        font-size: 5rem;
+    } 
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .menu-drawer {
+        padding: 40px;
+    }
+
+    .navbar .actions {
+        display: none;
+    }
+
+    .separate-mobile {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero {
+        margin-top: 40px;
+    }
+
+    .hero .title {
+        font-size: 5.2rem;
+        margin-top: 20px;
+    }
+
+    .hero .desc {
+        width: 100%;
+    }
+
+    .clients .images {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .list-guides {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .featured .link {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .view-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .stats .infor .sub-title {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats-trend {
+        top: 20px;
+        left: 20px;      
+        border-radius: 12px;   
+    }
+    
+    .stats .row-qty {
+        flex-direction: column;
+        row-gap: 50px;
+        text-align: center;
+    }
+
+    .subscription .infor {
+        padding: 0 40px;
+    }
+
+    .subscription .sub-title {
+        font-size: 3rem;
+    }
+
+    .stats .qty-desc {
+        margin-top: 14px;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row-bottom {
+        display: block;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+    
+}
